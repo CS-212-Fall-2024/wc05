@@ -1,0 +1,48 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage[a4paper]{geometry}
+\usepackage{hyperref}
+\usepackage{mdframed}
+\usepackage{arabtex}
+\usepackage{utf8}
+\setcode{utf8}
+
+
+\title{Weekly Challenge 05: Pumping Lemma}
+\author{CS 212 Nature of Computation\\Habib University}
+\date{Fall 2024}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{claim}
+\newtheorem{claim}{Claim}
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+% \printanswers %uncomment this
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+    \titledquestion{Rat problem}
+    Your friend Sud is in a Tom and Jerry-esque situation with a rat. Where he tries to catch the rat and the rat keeps outsmarting him. To taunt Sud, every time the rat runs out to steal some cheese it yells out its catchphrase which is of form ``\emph{RRRRRAAAAATTTT}'' given by the RegEx $R^iA^jT^k$ for $i,j,k \in \mathbb{Z}^+$. Now Sud, in a very Wile e Coyote-like fashion makes a contraption to catch the rat. The contraption has a DFA that recognizes the rat's catch phrase in order to detect the rat running around. The rat being much smarter than Sud decides to modify its catchphrase slightly such that such that it's catchphrase is no longer regular, so its not detected by Sud's machine. The new catch phrase is defined as $R^iA^jT^k$ where $i,j,k \in \mathbb{Z}^+$ and $i \neq 1$ or $j = k$.
+    
+    Show that the following language $L$ is not regular:
+    $$L = \{R^iA^jT^k|\; i,j,k \in \mathbb{Z}^+ \text{ and } i \neq 1 \text{ or } j = k\}$$
+    
+    % Enter your solution below
+    \begin{solution}
+
+    \end{solution}
+  
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
